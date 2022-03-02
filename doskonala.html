@@ -1,0 +1,33 @@
+<textarea rows="20" cols="50">
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+// Napisz program, który po wczytaniu liczby sprawdzi czy jest ona doskonała, metodą sumowania podzielników (w pętli) i sprawdzania czy suma jest równa wczytanej liczbie.
+system("chcp 1250");
+int d_ste;
+int suma_ste = 0;
+cout<<"podaj liczbę = ";
+cin>>d_ste;
+for (int i=1;i<=(d_ste / 2);i++)
+{
+if (d_ste % i == 0)
+{
+suma_ste = suma_ste+i;
+}
+}
+if (suma_ste == d_ste && d_ste > 0)
+{
+cout << "Liczba "<<d_ste<<" jest doskonała"<<endl;
+}
+else
+{
+cout << "Liczba "<<d_ste<<" nie jest doskonała"<<endl;
+}
+system("PAUSE");
+return EXIT_SUCCESS;
+}
+</textarea>
